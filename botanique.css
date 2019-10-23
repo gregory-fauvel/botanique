@@ -1,0 +1,619 @@
+body{
+	margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction:column;
+
+}
+header{
+	display: flex;
+	flex-direction:row;
+	justify-content:center;
+	background-color:green;
+	width: 100%;
+	height: 117px;
+}
+#menu{
+  	position: fixed;
+  	right: 0;
+  	top: 50%;
+  	width: 8em;
+  	margin-top: -2.5em;
+  	opacity: 0.5;
+}
+
+nav ul{
+	padding-bottom:10px;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none; 
+	background-color:black;
+	border-radius: 20px;
+}
+nav li{
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+	width: 100px;
+	height: 40px;
+	text-align:center;
+	line-height: 40px;
+}
+
+nav li a {
+	display: block;
+	text-decoration: none;
+	color:white;
+}
+
+nav li :hover{
+	background-color:#00FE7E;
+	border-radius: 20px;
+
+}
+h1{
+	color: white;
+	font-family:cursive;
+	text-align: center;
+}
+
+main{
+	display: flex;
+	flex-direction:column;
+	background-image: url(presentation.jpg);
+	background-size: cover;
+	justify-content:center;
+	align-items: center;
+	width: 100%;
+}	
+
+p{
+	color: white;
+	font-family:Georgia ;
+	text-align: center;
+	margin-left: 20px;
+	margin-right:20px;
+}
+
+.section1{
+	border:solid black;
+	border-radius: 20px;
+	background-color:green;
+}
+.accueil{
+	width: 100%;
+	background-position: center;
+	background-image: url("presentation.jpg");
+	background-repeat:no-repeat;
+	backface-visibility: hidden;
+	background-size: cover;
+	animation:accueilprinc 20s linear infinite 0s;
+	height: 500px;
+
+}
+@keyframes accueilprinc{
+	0% {
+		background-image: url("presentation.jpg");
+	}
+	25%{
+		background-image: url("fondplante.jpg");
+	}
+	50%{
+		background-image: url("fondchampi.jpg");
+	}
+	75%{
+		background-image: url("accueil4.jpg");
+	}
+	100%{
+		background-image: url("accueil5.jpg");
+	}
+}
+
+.description{
+	margin-right:550px;
+	margin-top: 0px;
+	width:600px;
+	height:320px;
+ 	border-style: solid;
+ 	border-width: 1px;
+ 	display: block;
+  	background-color:black;
+ 	transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.description:hover {
+  background-color:green;
+  width: 600px;
+  height: 320px;
+  transform: rotate(360deg);
+
+}
+
+.titre{
+	background-color:green;
+	border-radius: 50%;
+	height:120px;
+	width: 150px;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	animation: gliss 10s infinite;
+}
+.rond{
+	padding-top: 20px;
+	height:120px;
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	animation: gliss 10ss infinite;
+
+}
+@keyframes gliss{
+	0% {transform: translateX(-500px);}
+	50%{transform: translateX(500px);}
+	100%{transform: translateX(-500px);}
+}
+
+.descriptionplantes{
+	text-align: center;
+	margin-bottom: 50px;
+	background-color:green;
+	width:600px;
+	height:200px;
+
+}
+.descriptionfleur{
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	background-color:green;
+	border-radius: 20px;
+	width:600px;
+	height:300px;
+
+}
+.descriptionplantes{
+	background-color:green;
+	margin-right: 600px;
+	margin-left: 20px;
+	padding-bottom:20px;
+	margin-top:20px;
+
+
+}
+.descriptionchampignon{
+	margin-bottom: 20px;
+	width:420px;
+	height: 500px;
+
+}
+.especeschampignon{
+	width:420px;
+	height: 400px;
+
+}
+.especesplantes{
+	margin-top:60px;
+	border: solid black;
+	border-radius: 20px;
+	background-color:green;
+	width:450px;
+	height:250px;
+
+}
+.especesfleur{
+	border: solid black;
+	border-radius: 20px;
+	background-color:green;
+	margin-bottom: 40px;
+	width:450px;
+	height:200px;
+
+
+}
+
+.champignondivers{
+	border-radius: 20%;
+	border:solid black 1px;
+	width:600px;
+	height:500px;
+}
+.descriptionchampignonsection1{
+	margin-top:40px;
+	background-color:green;
+	border-radius: 20%;
+	border:solid black 1px;
+	width:500px;
+	height:450px;
+}
+
+.articles{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width:100%;
+}
+
+.defilé{
+	margin-bottom:60px;
+	width:500px;
+	height:300px;
+
+}
+.plante{
+	background-image: url(fondplante.jpg);
+	background-size: cover;
+}
+
+.fleur{
+	background-image: url(fondfleur.jpg);
+	background-size: cover;
+
+}
+.champignon{
+	background-image: url(fondchampi.jpg);
+	background-size: cover;	
+}
+
+.cycle{
+	padding-bottom: 20px;
+	border:solid black 3px;
+}
+
+.cycle1 {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.cycle1:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.cycle2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 490px;
+	width: 420px;
+	background-color:white;
+	border-radius: 20px;
+
+}
+
+.sert{
+	background-color:green;
+	border:solid black 2px;
+	margin-bottom: 40px;
+	border-radius:20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width:950px;
+	height:600px;
+	color: white;
+
+}
+
+.video{
+	border-radius: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.slider{
+	width:500px;
+	height:300px;
+	overflow: hidden;
+	margin:30px;
+}
+
+.slides{
+	width: calc(500px * 5);
+	animation: glisse 30s infinite;
+
+}
+
+.slide{
+	float: left;
+
+}
+
+@keyframes glisse{
+	0%{
+		transform: translateX(0);
+	}
+	10%{
+		transform: translateX(0);
+	}
+	33%{
+		transform: translateX(-500px);
+	}
+	43%{
+		transform: translateX(-1000px);
+	}
+	66%{
+		transform: translateX(-1500px);
+	}
+	76%{
+		transform: translateX(-2000px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+
+}
+
+/*arbustes*/
+
+.maina{
+	display: flex;
+	flex-direction:row;
+	background-image: url(arbuste/garden.jpg);
+	background-size: 1300px 504px;
+	justify-content: space-around;
+	width:100%;
+	height: 504px;
+}
+
+.intro{
+	color:white;
+	font-family: 'Georgia';
+	font-size: 16px;
+	
+	width:600px;
+	height:260px;
+	padding: 20px;
+
+	border:solid black;
+	border-radius: 20px;	
+	margin-left: 20px;
+	margin-right:20px;
+	box-shadow: -10px 5px 5px black;
+}
+.anim{
+	width: 	500px;
+	height:300px;
+	overflow: hidden;
+	margin:100px auto;
+	border:solid black;
+	border-radius: 20px;	
+	margin-left: 20px;
+	margin-right:20px;
+	box-shadow: -10px 5px 5px black;
+
+}
+
+.arbuste ul {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    flex: 0 0 0;
+    flex-wrap: wrap;
+}
+
+.arbuste ul li {
+    position: relative;
+    display: flex;
+    padding: 8px;
+    border-radius: 8px;
+    border-style:solid;
+    box-shadow: 0 0 20px black;
+    margin: 30px;
+    width: 220px;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    transition: filter 0.25s ease-out;
+}
+.arbuste ul li::after {
+    content: "";
+    border-radius: 0px 0px 8px 8px;
+    z-index: 2;
+    position: absolute;
+    display: block;
+    top: calc(100% - 2em - 18px);
+    left: 0;
+    width: 100%;
+    height:52px;
+    background-color: #2E4747;
+    pointer-events: none;
+}
+
+.arbuste ul li:hover {
+    filter: brightness(112.5%);
+}
+ul li#tamaris {
+    background-image: url("arbuste/tamaris.jpg");
+}
+ul li#milleper {
+    background-image: url("arbuste/Millepertuis.jpg");
+}
+ul li#pommier {
+    background-image: url("arbuste/pommier-damour.jpg");
+}
+ul li#calyc {
+    background-image: url("arbuste/Calycanthe.jpg");
+}
+ul li#jasmin {
+    background-image: url("arbuste/jasmin-de-nuit.jpg");
+}
+ul li#vanil {
+    background-image: url("arbuste/Vanillier de Cayenne.jpg");
+}
+ul li#tamaris:hover {
+    background-image: url("https://www.willemsefrance.fr/Files/126284/Img/17/018142-2-Tamaris-d-ete_1x800.jpg");
+}
+ul li#milleper:hover {
+    background-image: url("https://www.willemsefrance.fr/Files/126284/Img/19/005561-10-Millepertuis_1x800.jpg");
+}
+ul li#pommier:hover {
+    background-image: url("http://gardenbreizh.org/modules/pix/cache/photos_120000/GBPIX_photo_125324.jpg");
+}
+ul li#calyc:hover {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbNj9FWA7NaYp-pMEIKnc1Z-jCCn9bi20RFhocz220FGY-NRnC");
+}
+ul li#jasmin:hover {
+    background-image: url("http://gardenbreizh.org/modules/pix/cache/photos_530000/GBPIX_photo_530487.jpg");
+}
+ul li#vanil:hover {
+    background-image: url("https://jnina.tn/49-large_default/vanillier-de-cayenne.jpg");
+}
+.arbuste ul li a {
+    z-index: 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.arbuste ul li a span {
+    color: #EFE3BF;
+    padding-left: 15px;
+    padding-bottom: 4px;
+    font-family: 'Candara';
+    font-size: 24px;
+    text-shadow: 0 0 4px black;
+}
+.arbuste{
+	background-image: url("arbuste/garden2.jpg");
+	background-size: cover;
+}
+
+/*legumes*/
+
+.sectionl{
+	background: url("legume/back1.jpg")top left / 100% 100%;
+	width:100%;
+	height: 100%;
+	animation:animback 12s infinite;
+}
+
+@keyframes animback {
+    25% {background:url("legume/back2.jpg")top left / 100% 100%;}
+    50% {background:url("legume/back3.jpeg")top left / 100% 100%;}
+    75% {background:url("legume/back4.jpg")top left / 100% 100%;}
+    100% {background:url("legume/back5.jpg")top left / 100% 100%;}
+}
+
+.sectionl p{
+	font-family: 'Candara';
+	font-size: 22px;
+	color:white;
+	width: 50%;
+	margin: 50px;
+	margin-left: 600px;
+}
+.articlel{
+	background-color: #032B0A;
+	padding-top: 30px;
+}
+
+.legume{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+    padding: 20px;
+   
+	
+}
+.legume img{
+	height: 400px;
+	width: 550px;
+    border-radius: 8px;
+    border-style:solid;
+    box-shadow: 0 0 20px black;
+	
+}
+.legume img:hover {
+	filter: brightness(120%);
+}
+#saison{
+	display: flex;
+	flex-direction: column;
+	color: white;
+	margin: 20px;
+}
+
+/*contact*/
+
+#contact {
+    background-color: black;
+    height: 150px;
+    padding: 10px;
+    padding-bottom: 27px;
+
+}
+
+#contact p {
+   
+    font-family: 'Impact';
+    font-size: 22px;
+    color: purple;
+    
+}
+
+ul.social {
+    list-style: none;
+    display: block;
+    padding: 7px;
+
+}
+ul.social li {
+    display: inline-block;
+    margin: 20px;
+    width: 32px;
+    height: 32px;
+}
+
+ul.social li a {
+    display: block;
+    border-radius: 3px;
+    color: white !important;
+    padding: 4px;
+    height: 100%;
+}
+
+ul.social li.facebook a {
+    background-image: url("social/facebook-logo.jpg");
+    background-size: 50px;
+    background-position: center;
+}
+ul.social li.linkedin a {
+    background-image: url("social/LinkedIn-Logo.jpg");
+    background-size: 50px;
+    background-position: center;
+}
+ul.social li.twitter a {
+    background-image: url("social/twitter-logo.jpg");
+    background-size: 38px;
+    background-position: center;
+}
+ul.social li.instagram a {
+    background-image: url("social/instagram-logo.jfif");
+    background-size: 45px;
+    background-position: center;
+}
+
+
+footer{
+	display: flex;
+	flex-direction:row;
+	background-color:green;
+	justify-content: center;
+	width: 100%;
+	height: 117px;
+}
